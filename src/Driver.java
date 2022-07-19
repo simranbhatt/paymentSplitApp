@@ -16,7 +16,12 @@ public class Driver {
         BalanceService balanceService = new BalanceService();
         Scanner input = new Scanner(System.in);
 
-        System.out.println("To add user: USER <numerical user ID> <username> <email> <phone number> \n Add expense: \n EXPENSE <user-id-of-person-who-paid> <amount> <no-of-users> <space-separated-list-of-users> <EQUAL/EXACT/PERCENT> <space-separated-values-in-case-of-non-equal> \n Show balances for all: \n SHOW \n Show balances for a single user: \n SHOW <user-id> \n");
+        System.out.println("To add user: USER <numerical user ID> <username> <email> <phone number> \n " +
+                "Add expense: \n " +
+                "EXPENSE <user-id-of-person-who-paid> <amount> <no-of-users> <space-separated-list-of-users> <EQUAL/EXACT/PERCENT> <space-separated-values-in-case-of-non-equal> \n " +
+                "Show balances for all: \n " +
+                "SHOW \n Show balances for a single user: \n " +
+                "SHOW <user-id> \n");
         System.out.println("Enter command: ");
         while(true) {
             String command = input.nextLine();
